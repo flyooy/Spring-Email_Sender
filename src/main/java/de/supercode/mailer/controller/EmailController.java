@@ -15,7 +15,6 @@ public class EmailController {
 
     @GetMapping
     public void sendMail() throws MessagingException {
-       // emailService.sendEmail("ultimate@warrior.sixpack","Netter Biceps", "Hallo Hogan, du bist mal cool gewesen.");
         emailService.sendHtmlEmail();
     }
 }
